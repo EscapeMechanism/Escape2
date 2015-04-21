@@ -16,13 +16,13 @@ public class WheelerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		drive = Input.GetAxis("Horizontal");
-		torque = rigidbody2D.angularVelocity;
+		torque = GetComponent<Rigidbody2D>().angularVelocity;
 //		if ((torque > -speed_limit && drive > 0f) || (torque < speed_limit && drive < 0f)) {
 //			rigidbody2D.AddTorque(drive * -500f);
 //		}
-		rigidbody2D.AddTorque(drive * acceleration());
+		GetComponent<Rigidbody2D>().AddTorque(drive * acceleration());
 		if (drive == 0f) {
-			rigidbody2D.AddTorque(torque/-20f);
+			GetComponent<Rigidbody2D>().AddTorque(torque/-20f);
 		}
 	}
 

@@ -12,7 +12,7 @@ public class GravityHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.rigidbody2D.AddForce (direction * 10);
+		this.GetComponent<Rigidbody2D>().AddForce (direction * 10);
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
