@@ -19,9 +19,6 @@ public class WheelerController : MonoBehaviour {
 	void Update () {
 		drive = Input.GetAxis("Horizontal");
 		torque = body.angularVelocity;
-//		if ((torque > -speed_limit && drive > 0f) || (torque < speed_limit && drive < 0f)) {
-//			rigidbody2D.AddTorque(drive * -500f);
-//		}
 		body.AddTorque(drive * acceleration());
 	}
 
