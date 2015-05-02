@@ -203,6 +203,7 @@ GameObject:
   - 23: {fileID: 633583890}
   - 33: {fileID: 633583889}
   - 114: {fileID: 633583891}
+  - 114: {fileID: 633583892}
   m_Layer: 0
   m_Name: Gravity Switch
   m_TagString: Untagged
@@ -277,6 +278,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fd5c11ee63e2e4297011f32dcc8073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &633583892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 633583886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9a1f4fdf3beb54b8fc0ffe54442bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &678551237
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +301,7 @@ GameObject:
   - 33: {fileID: 678551241}
   - 23: {fileID: 678551240}
   - 114: {fileID: 678551242}
+  - 114: {fileID: 678551243}
   m_Layer: 0
   m_Name: Gravity Switch
   m_TagString: Untagged
@@ -361,6 +374,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 12fd5c11ee63e2e4297011f32dcc8073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &678551243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678551237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9a1f4fdf3beb54b8fc0ffe54442bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &723586198

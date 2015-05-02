@@ -1,0 +1,30 @@
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: NVIDIA GeForce 8600M GT  (ID=0x407)
+    Vendor:   NVIDIA
+    VRAM:     495 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\simon\Code\Escape2\build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\simon\Code\Escape2\build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\simon\Code\Escape2\build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\simon\Code\Escape2\build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\simon\Code\Escape2\build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\simon\Code\Escape2\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\simon\Code\Escape2\build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\simon\Code\Escape2\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.093 seconds
+desktop: 1440x900 60Hz; virtual: 3360x1080 at -1920,-180
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\simon\Code\Escape2\build_Data\Managed\System.Core.dll (this message is harmless)
+C:/Users/simon/Code/Escape2/build_Data
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LevelLoader:Start() (at C:\Users\simon\Code\Escape2\Assets\Scripts\LevelLoader.cs:8)
+ 
+(Filename: C:/Users/simon/Code/Escape2/Assets/Scripts/LevelLoader.cs Line: 8)
+
+Waiting for finish

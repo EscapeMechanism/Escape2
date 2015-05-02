@@ -5,30 +5,34 @@ using System.Text;
 using System.Collections;
 
 
-public class SvgLevelData {
-  ArrayList nodes;
+public class SvgShapeData {
+	XmlNamespaceManager nsmgr;
+	XmlDocument document;
 
-  public SvgLevelData(string path) {
-    nodes = new ArrayList();
+	public SvgShapeData(string path) {
+		document = new XmlDocument ();
+		document.Load (path);
+		nsmgr = new XmlNamespaceManager (document.NameTable);
+		nsmgr.AddNamespace ("svg", "http://www.w3.org/2000/svg");
+		nsmgr.AddNamespace ("inkscape", "http://www.inkscape.org/namespaces/inkscape");
+	}
 
-    XmlDocument document = new XmlDocument();
-    document.Load(path);
-    XmlNamespaceManager nsmgr = new XmlNamespaceManager(document.NameTable);
-    nsmgr.AddNamespace("svg", "http://www.w3.org/2000/svg");
-    nsmgr.AddNamespace("inkscape", "http://www.inkscape.org/namespaces/inkscape");
+	public ArrayList NodesWithLabel(String label) {
+		ArrayList nodes = new ArrayList ();
+		String xpath = "//svg:rect[@inkscape:label='{0}']";
+		XmlNodeList shapes = document.SelectNodes(String.Format(xpath, label), nsmgr);
 
-    XmlNodeList tiles = document.SelectNodes("//svg:g[@inkscape:label='tiles']/svg:rect", nsmgr);
+		IEnumerator ienum = shapes.GetEnumerator(); 
+		XmlNode shape;
+		while (ienum.MoveNext()) {
+			shape = (XmlNode) ienum.Current;
+			Console.WriteLine(shape.OuterXml);
+			Console.WriteLine();
+			nodes.Add(shape);
+		}
 
-    IEnumerator ienum = tiles.GetEnumerator();
-    XmlNode rect;
-    while (ienum.MoveNext()) {
-      rect = (XmlNode) ienum.Current;
-      Console.WriteLine(rect.OuterXml);
-      Console.WriteLine();
-
-      nodes.Add(rect);
-    }
-  }
+		return nodes;
+	}
 }
 
 

@@ -6,10 +6,9 @@ using System.Collections;
 
 
 public class HelloWorld {
-  static public void Main () {
-
-    SvgLevelData sld = new SvgLevelData(@"/Users/simonhildebrandt/Desktop/test.svg");
-
-  }
+	static public void Main (string[] args) {
+		SvgShapeData sld = new SvgShapeData(@"/Users/simonhildebrandt/Desktop/test.svg");
+		sld.NodesWithLabel ("block1");
+  	}
 }
 
