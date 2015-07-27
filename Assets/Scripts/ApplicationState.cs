@@ -10,14 +10,22 @@ public class ApplicationState : MonoBehaviour {
 	public void backToMain() {
 		Application.LoadLevel("Main");
 	}
-
+	
 	public void editLevel() {
-		ApplicationState.currentFilename = "first";
 		Application.LoadLevel("Editor");
 	}
-
+	
 	public void playLevel() {
-		ApplicationState.currentFilename = "first";
+		Application.LoadLevel("Play");
+	}
+	
+	public static void editLevel(string filename) {
+		ApplicationState.currentFilename = filename;
+		Application.LoadLevel("Editor");
+	}
+	
+	public static void playLevel(string filename) {
+		ApplicationState.currentFilename = filename;
 		ApplicationState.editing = false;
 		Application.LoadLevel("Play");
 	}

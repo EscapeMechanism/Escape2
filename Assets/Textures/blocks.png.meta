@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7f6485c73dd05274b9309e1305aed92e
-timeCreated: 1430553983
+timeCreated: 1437998113
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,6 +9,7 @@ TextureImporter:
     21300004: blocks_2
     21300006: blocks_3
     21300008: blocks_4
+    21300010: blocks_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -32,7 +33,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
     filterMode: 1
     aniso: 16
@@ -103,6 +104,16 @@ TextureImporter:
         height: 1024
       alignment: 1
       pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blocks_5
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 256
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

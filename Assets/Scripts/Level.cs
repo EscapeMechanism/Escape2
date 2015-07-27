@@ -15,7 +15,8 @@ public class Level {
 	[XmlArray("Blocks"),XmlArrayItem("Block")]
 	public Block[] blocks;
 	public string name;
-	
+	public float time_taken;
+
 	public Level (string filename) {
 		name = filename;
 	}
@@ -49,9 +50,17 @@ public class Level {
 	}
 	
 	public static string path(string filename) {
-		return String.Format ("{0}/{1}.xml", Application.persistentDataPath, filename);
+		return String.Format ("{0}/{1}.xml", Level.save_path(), filename);
 	}
-	
+
+	public static string save_path(){
+		return String.Format ("{0}", Application.persistentDataPath);
+	}
+
+	public void update(float time) {
+		time_taken = time;
+		save();
+	}
 }
 
 [System.Serializable]
