@@ -5,6 +5,7 @@ Temp/
 Library/
 *.zip
 *.app
+Builds
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
